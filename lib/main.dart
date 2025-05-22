@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plantapp/components/homescreen.dart';
+import 'package:plantapp/screen/home/homescreen.dart';
 import 'package:plantapp/constans.dart';
 
 void main() {
