@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:plantapp/constans.dart';
+import 'package:plantapp/screen/home/components/featurred_plants.dart';
+import 'package:plantapp/screen/home/components/header_with_searchbox.dart';
+import 'package:plantapp/screen/home/components/recomend_plants.dart';
+import 'package:plantapp/screen/home/components/title_with_more_bttn.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -10,7 +15,7 @@ class Body extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-           HeaderWithProfileInfo(
+          HeaderWithProfileInfo(
             size: size,
             name: 'AditGans',
             address: 'jl.bima 18 ,Tangerang',

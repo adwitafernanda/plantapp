@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plantapp/components/my_bottom_nav_bar.dart';
-import 'package:plantapp/screens/camera/components/home_camera_page.dart';
+import 'package:plantapp/screen/camera/components/home_camera_page.dart';
 
 class CameraScreen extends StatelessWidget {
   const CameraScreen({super.key});

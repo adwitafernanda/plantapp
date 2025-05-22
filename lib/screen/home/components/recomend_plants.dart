@@ -1,5 +1,9 @@
+
+
+
 import 'package:flutter/material.dart';
 import 'package:plantapp/constans.dart';
+import 'package:plantapp/screen/details/detais_screen.dart';
 
 class RecomendsPlants extends StatelessWidget {
   const RecomendsPlants({Key? key}) : super(key: key);
@@ -115,7 +119,7 @@ class RecomendPlantCard extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    '$price',
+                    '\$$price',
                     style: Theme.of(context)
                         .textTheme
                         .labelLarge

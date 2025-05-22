@@ -1,15 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:plantapp/components/my_bottom_nav_bar.dart';
+import 'dart:io';
+import 'package:path/path.dart' as path;
 
-class CameraScreen extends StatelessWidget {
-  const CameraScreen({super.key});
+class StorageHelper {
+  static Future<String> _getFolderPath() async {
+    final Directory dir = Directory('/storage/emulated/0/DCIM/FlutterNativeCam');
+    if (!await dir.exists()) await dir.create(recursive: true);
+    return dir.path;
+  }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: HomePage(),
-      bottomNavigationBar: SafeArea(
-      child: const MyBottomNavBar(currentIndex: 2),)
-    );
+  static Future<File> saveImage(File file, String prefix) async {
+    final String dirPath = await _getFolderPath();
+    final String fileName = '$prefix${DateTime.now().millisecondsSinceEpoch}${path.extension(file.path)}';
+    final String savedPath = path.join(dirPath, fileName);
+    return await file.copy(savedPath);
   }
 }

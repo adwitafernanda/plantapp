@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plantapp/constans.dart';
+import 'package:plantapp/screen/details/components/image_and_icons.dart';
+import 'package:plantapp/screen/details/components/title_and_price.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key); // null safety

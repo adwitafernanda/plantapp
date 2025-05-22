@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plantapp/constans.dart';
 import 'package:plantapp/screen/home/homescreen.dart';
+import 'package:plantapp/screen/camera/camera_screen.dart';
+import 'package:plantapp/screen/maps/maps_screen.dart';
 
 class MyBottomNavBar extends StatelessWidget {
   final int currentIndex;
